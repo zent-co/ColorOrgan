@@ -1,19 +1,5 @@
 
 
-0. Overview
-    1. What is a Color Organ?
-    2. Description of yours (Left and right channel, how many filters per channel) and its theory of operation
-2. Hardware
-    1. Descriptions/block diagrams
-    2. Pictures
-    3. YouTube Videos
-3. Software
-    1. Post Link to Actual Code. 
-    2. Describe what code is doing. 
-5. Integration
-    1. Challenges
-    2. Final product in video format
-
 # ColorOrgan
 This is a color organ. It filters audio signals provided by 1/8" audio jack into seven different channels for each channel (left and right) using seven band pass filters per channel. The filters detect the peak value in that frequency band and provide that to an Arduino Uno via A to D channels. That value is "filtered" by an expoential filter that transforms the signal into a visually pleasing signal. The raw audio waveform is not pleasant to look at because [the human eye perceives logarithmic differences in light intesnsity](https://psychology.stackexchange.com/questions/5408/sensitivity-of-human-eye-to-luminance). 
 
@@ -70,4 +56,20 @@ The following sections describe the technical details of the Tub Light system.
 - Slow Color Change
 - Candle/Fire Flicker
 - User based favorite color list
-- Move UDP code in App into ControllerCompositionRoot for depedency injection. 
+- Move UDP code in App into ControllerCompositionRoot for depedency injection.
+
+
+
+0. Overview
+    1. What is a Color Organ?
+    2. Description of yours (Left and right channel, how many filters per channel) and its theory of operation
+2. Hardware
+    1. Descriptions/block diagrams
+    2. Pictures
+    3. YouTube Videos
+3. Software
+    1. Post Link to Actual Code. 
+    2. Describe what code is doing. 
+5. Integration
+    1. Challenges
+    2. Final product in video format
