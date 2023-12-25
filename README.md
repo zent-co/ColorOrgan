@@ -1,14 +1,14 @@
 # Color Organ Project
-A color organ is a device that filters an audio signal into various frequency bands and the intesity of the audio signal in that frequency band is used to drive the brightness of a light. The intensity of the sound and brightness of the light a directly related to each other. 
+A color organ is a device that filters an audio signal into various frequency bands and the intensity of the audio signal in that frequency band is used to drive the brightness of a light. The intensity of the sound and brightness of the light a directly related to each other. 
 
 ## Project Motivation and Description
-The first color organ I built was in Circuits/Electronics II in college. That color organ used three analog filters implemented with OpAmps and a single, small LED for each filter. When I started designing this color ogran, I considered implementing it with OpAmps, but ultimately decided against it due to the potential complications, and decided on a digital design instead. 
+The first color organ I built was in Circuits/Electronics II in college. That color organ used three analog filters implemented with OpAmps and a single, small LED for each filter. When I started designing this color organ, I considered implementing it with OpAmps, but ultimately decided against it due to the potential complications, and decided on a digital design instead. 
 
 ## Demo Videos
 [![Color Organ Demo 1](resources/ColorOrganDemo1.png)](https://www.youtube.com/watch?v=H60W149ZgU0 "Color Organ Demo 1") | [![Color Organ Demo 2](resources/ColorOrganDemo2.png)](https://www.youtube.com/watch?v=pImDAChwF64 "Color Organ Demo 2")
 
 ## Technical Overview
-This color organ filters audio signals provided by an 1/8" audio jack into seven different channels for each channel (left and right) using seven band pass filters per channel. The filters detect the peak value in that frequency band and provide that to an Arduino Uno via A to D channels. That value is "filtered" by an expoential filter that transforms the signal into a visually pleasing, exponetially changing signal. The raw audio waveform is not pleasant to look at because [the human eye perceives logarithmic differences in light intesnsity](https://psychology.stackexchange.com/questions/5408/sensitivity-of-human-eye-to-luminance). 
+This color organ filters audio signals provided by an 1/8" audio jack into seven different channels for each channel (left and right) using seven band pass filters per channel. The filters detect the peak value in that frequency band and provide that to an Arduino Uno via A to D channels. That value is "filtered" by an exponential filter that transforms the signal into a visually pleasing, exponentially changing signal. The raw audio waveform is not pleasant to look at because [the human eye perceives logarithmic differences in light intensity](https://psychology.stackexchange.com/questions/5408/sensitivity-of-human-eye-to-luminance). 
 
 Here is a block diagram of my color organ:
 
@@ -19,7 +19,7 @@ Here is a block diagram of my color organ:
 - [Sparkfun Spectrum Shield](https://www.sparkfun.com/products/retired/10615) to filter the right and left channel with seven bandpass filters per channel. Bandpass center frequencies at: 63Hz, 160Hz, 400Hz, 1000Hz, 2500Hz, 6250Hz, and 16000Hz. 
 - [Sparkfun PWM Shield](https://www.sparkfun.com/products/retired/10615) to drive the brightness of each LED.
 - LED Driver Circuit (FET driven by BJT) to convert 5V PWM signal into a 12V PWM signal to drive the LEDs.
-- [12VDC LED Flood Lights](https://www.amazon.com/gp/product/B008XZAPV8/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) with photographic color filters to acheive desired color per LED. 
+- [12VDC LED Flood Lights](https://www.amazon.com/gp/product/B008XZAPV8/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) with photographic color filters to achieve desired color per LED. 
 - 12VDC/5VDC Power Supply
 
 ### Firmware
