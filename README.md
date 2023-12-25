@@ -23,6 +23,13 @@ Here is a block diagram of my color organ:
 - 12VDC/5VDC Power Supply
 
 ### Firmware
-    1. Post Link to Actual Code. 
-    2. Describe what code is doing. 
-    3. Math Challenges
+- Initialize Spectrum Shield and PWM Shield
+- In the main loop, continually do the following:
+    - Read peak amplitudes for each band pass filter (Read_Frequencies())
+        - Read peak values for each bandpass filter in the right and left channel.
+        - Store the peak values for each filter in an array. One for the left channel and one for the right channel.
+    - Set the associated LED brightness (Set_Leds())
+        - Change the raw value from a range of 1024 counts to 4096 counts using the exponential filter
+        - Set each LED value with this method
+        - Once all LED values updated with the PWM shield, send Tlc.update() command to update new intensity values for each LED. 
+  
