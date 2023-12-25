@@ -5,7 +5,7 @@ A color organ is a device that filters an audio signal into various frequency ba
 The first color organ I built was in Circuits/Electronics II in college. That color organ used three analog filters implemented with OpAmps and a single, small LED for each filter. When I started designing this color ogran, I considered implementing it with OpAmps, but ultimately decided against it due to the potential complications, and decided on a digital design instead. 
 
 ## Demo Videos
-[![Original Tub Light Color Selection](resources/videoImages/OriginalColorChange.png)](https://www.youtube.com/watch?v=9z2hBdIpH5c "Original Tub Light Color Filter") | [![Tub Light System Color Selection](resources/videoImages/TubLightSystemColorChange.png)](https://www.youtube.com/watch?v=xVnbhTjhsxw "Tub Light System Demo")
+[![Color Organ Demo 1](resources/ColorOrganDemo1.png)](https://www.youtube.com/watch?v=H60W149ZgU0 "Color Organ Demo 1") | [![Color Organ Demo 2](resources/ColorOrganDemo2.png)](https://www.youtube.com/watch?v=pImDAChwF64 "Color Organ Demo 2")
 
 ## Technical Overview
 This color organ filters audio signals provided by an 1/8" audio jack into seven different channels for each channel (left and right) using seven band pass filters per channel. The filters detect the peak value in that frequency band and provide that to an Arduino Uno via A to D channels. That value is "filtered" by an expoential filter that transforms the signal into a visually pleasing, exponetially changing signal. The raw audio waveform is not pleasant to look at because [the human eye perceives logarithmic differences in light intesnsity](https://psychology.stackexchange.com/questions/5408/sensitivity-of-human-eye-to-luminance). 
