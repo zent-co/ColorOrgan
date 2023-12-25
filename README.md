@@ -9,7 +9,7 @@ This color organ filters audio signals provided by an 1/8" audio jack into seven
 
 Here is a block diagram of my color organ:
 
-![Color Organ Block Diagram](https://docs.google.com/drawings/d/1ZVCmihxqaLcft7Ki3ZLr3IQ5SkfsJWImluECM4MgTx0/edit?usp=sharing)
+![Color Organ Block Diagram](resources/blockDiagram.png)
 
 ### Hardware
     1. Descriptions/block diagrams
