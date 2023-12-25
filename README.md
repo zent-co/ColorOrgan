@@ -1,15 +1,15 @@
 # Color Organ Project
-This is a color organ. It filters audio signals provided by an 1/8" audio jack into seven different channels for each channel (left and right) using seven band pass filters per channel. The filters detect the peak value in that frequency band and provide that to an Arduino Uno via A to D channels. That value is "filtered" by an expoential filter that transforms the signal into a visually pleasing, exponetially changing signal. The raw audio waveform is not pleasant to look at because [the human eye perceives logarithmic differences in light intesnsity](https://psychology.stackexchange.com/questions/5408/sensitivity-of-human-eye-to-luminance). 
+A color organ is a device that filters an audio signal into various frequency bands and the intesity of the audio signal in that frequency band is used to drive the brightness of a light. The intensity of the sound and brightness of the light a directly related to each other. 
 
 ## Project Motivation and Description
-STORY OF HOW YOU BUILT ONE I NCOLLEGE WITH ANALOG PARTS AND ALWAYS WANTED TO BUILD A BIGGER/BETTER ONE
+The first color organ I built was in Circuits/Electronics II in college. That color organ used three analog filters implemented with OpAmps and a single, small LED for each filter. When I started designing this color ogran, I considered implementing it with OpAmps, but ultimately decided against it due to the potential complications, and decided on a digital design instead. 
 
 ## Technical Overview
-The following sections describe the technical details and challenges in designing and building the Color Organ.
+This color organ filters audio signals provided by an 1/8" audio jack into seven different channels for each channel (left and right) using seven band pass filters per channel. The filters detect the peak value in that frequency band and provide that to an Arduino Uno via A to D channels. That value is "filtered" by an expoential filter that transforms the signal into a visually pleasing, exponetially changing signal. The raw audio waveform is not pleasant to look at because [the human eye perceives logarithmic differences in light intesnsity](https://psychology.stackexchange.com/questions/5408/sensitivity-of-human-eye-to-luminance). 
 
-0. Overview
-    1. What is a Color Organ?
-    2. Description of yours (Left and right channel, how many filters per channel) and its theory of operation
+Here is a block diagram of my color organ:
+
+![Color Organ Block Diagram](https://docs.google.com/drawings/d/1ZVCmihxqaLcft7Ki3ZLr3IQ5SkfsJWImluECM4MgTx0/edit?usp=sharing)
 
 ### Hardware
     1. Descriptions/block diagrams
