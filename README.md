@@ -11,6 +11,8 @@ Here is a block diagram of my color organ:
 
 ![Color Organ Block Diagram](resources/blockDiagram.png)
 
+## Demo Videos
+
 ### Hardware
     1. Descriptions/block diagrams
     2. Pictures
@@ -19,9 +21,6 @@ Here is a block diagram of my color organ:
 - [Sparkfun ESP32 Thing Plus](https://www.sparkfun.com/products/15663?gclid=CjwKCAiAp5qsBhAPEiwAP0qeJnRRSU4OE6ZlrzAAaxC8sL1j2-f2hIqKbaGOr5SEi_CV_tvKprVjEhoCCmUQAvD_BwE) to communicate via WiFi and control the RGB light. 
 - [Adafruit NeoPixel Jewel RGB LED assembly](https://www.adafruit.com/product/2859?gad_source=1&gclid=CjwKCAiAp5qsBhAPEiwAP0qeJkzRK5o67oNMlqqDC8S1sDyIZCz12_C3Y6A9JUmND2r-IASDWLSKcRoCs48QAvD_BwE) for RGB light.
 .
-
-#### Hardware Pictures:
-
 
 ### Firmware
     1. Post Link to Actual Code. 
@@ -33,8 +32,3 @@ Here is a block diagram of my color organ:
 
 - List 1
 - List 2
-  
-
-## Future Feature Development List
-
-
