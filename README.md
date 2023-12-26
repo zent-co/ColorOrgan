@@ -16,7 +16,7 @@ Here is a block diagram of my color organ:
 
 ### Hardware
 - [Arduino Uno](https://www.sparkfun.com/products/11021) to sample peak voltage levels from left and right channels filters and set each corresponding LED's intensity via PWM control. 
-- [Sparkfun Spectrum Shield](https://www.sparkfun.com/products/retired/10615) to filter the right and left channel with seven bandpass filters per channel. Bandpass center frequencies at: 63Hz, 160Hz, 400Hz, 1000Hz, 2500Hz, 6250Hz, and 16000Hz. 
+- [Sparkfun Spectrum Shield](https://www.sparkfun.com/products/13116) to filter the right and left channel with seven bandpass filters per channel. Bandpass center frequencies at: 63Hz, 160Hz, 400Hz, 1000Hz, 2500Hz, 6250Hz, and 16000Hz. 
 - [Sparkfun PWM Shield](https://www.sparkfun.com/products/retired/10615) to drive the brightness of each LED.
 - LED Driver Circuit (FET driven by BJT) to convert 5V PWM signal into a 12V PWM signal to drive the LEDs.
 - [12VDC LED Flood Lights](https://www.amazon.com/gp/product/B008XZAPV8/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) with photographic color filters to achieve desired color per LED. 
