@@ -1,5 +1,5 @@
 # Color Organ Project
-A color organ is a device that filters an audio signal into various frequency bands and the intensity of the audio signal in that frequency band is used to drive the brightness of a light. The intensity of the sound and brightness of the light a directly related to each other. 
+A color organ is a device that filters an audio signal into various frequency bands. The intensity of the audio signal in that frequency band is used to drive the brightness of a light. The intensity of the sound and brightness of the light a directly related to each other. See the video examples below to just see the color organ in action!
 
 ## Project Motivation and Description
 The first color organ I built was in Circuits/Electronics II in college. That color organ used three analog filters implemented with OpAmps and a single, small LED for each filter. When I started designing this color organ, I considered implementing it with OpAmps, but ultimately decided against it due to the potential complications, and decided on a digital design instead. 
