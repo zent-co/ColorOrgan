@@ -86,8 +86,6 @@ void Set_Leds(){
   int output_value=0;
 
   for(int i = 0; i <= 13; i++){
-    //run through logarithmic filter
-    
     //set value from left or right array
     if(i <= 6)
     {
